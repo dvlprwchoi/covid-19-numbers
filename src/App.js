@@ -1,3 +1,4 @@
+import { Route } from "react-router-dom";
 import './App.css';
 import Header from "./components/Header/Header";
 import Home from './components/Home/Home';
@@ -11,8 +12,11 @@ function App() {
         <Header />      
       </div>
       <div className="appContent">
-        <Home />
-        <WorldSummary />
+        <main>
+          <Route path = "/" exact component = {Home} />
+          <Route path = "/worldSummary" component = {WorldSummary} />
+        </main>
+        
       </div>
     </div>
   );

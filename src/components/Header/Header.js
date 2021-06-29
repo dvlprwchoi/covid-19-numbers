@@ -1,6 +1,20 @@
+import { Link } from "react-router-dom";
+
 function Header () {
     return (
-        <h2>Hello from header</h2>
+        <div className = "navBar">
+            <nav>
+                <Link to = "/">
+                    <h3>Home</h3>
+                </Link>
+                <Link to = "/worldSummary">
+                    <h3>World Summary</h3>
+                </Link>
+            </nav>
+            {/* <main>
+
+            </main> */}
+        </div>
     );
 }
 
