@@ -2,7 +2,7 @@ import { Route } from "react-router-dom";
 import './App.css';
 import Header from "./components/Header/Header";
 import Home from './components/Home/Home';
-import WorldSummary from './components/WorldSummary/WorldSummary';
+import GlobalSummary from './components/GlobalSummary/GlobalSummary';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <div className="appContent">
         <main>
           <Route path = "/" exact component = {Home} />
-          <Route path = "/worldSummary" component = {WorldSummary} />
+          <Route path = "/globalSummary" exact component = {GlobalSummary} />
         </main>
         
       </div>

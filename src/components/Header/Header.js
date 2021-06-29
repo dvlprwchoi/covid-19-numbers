@@ -7,8 +7,8 @@ function Header () {
                 <Link to = "/">
                     <h3>Home</h3>
                 </Link>
-                <Link to = "/worldSummary">
-                    <h3>World Summary</h3>
+                <Link to = "/globalSummary">
+                    <h3>Global Summary</h3>
                 </Link>
             </nav>
             {/* <main>
