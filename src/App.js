@@ -1,3 +1,4 @@
+// import { useEffect } from "react";
 import { Route } from "react-router-dom";
 import './App.css';
 import Header from "./components/Header/Header";
@@ -5,6 +6,18 @@ import Home from './components/Home/Home';
 import GlobalSummary from './components/GlobalSummary/GlobalSummary';
 
 function App() {
+  // const getApiData = async () => {
+  //   const url = "https://api.covid19api.com/summary";
+  //   try {
+  //     const response = await fetch (url);
+  //     const data = await response.json();
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+  // useEffect (() => {
+  //   getApiData();
+  // }, []);
   return (
     <div className="App">
       <div className="appHeader">
