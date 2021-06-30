@@ -10,6 +10,9 @@ function Header () {
                 <Link to = "/globalSummary">
                     <h3>Global Summary</h3>
                 </Link>
+                <Link to = "/usSummary">
+                    <h3>US Summary</h3>
+                </Link>
             </nav>
             {/* <main>
 

@@ -4,6 +4,7 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Home from './components/Home/Home';
 import GlobalSummary from './components/GlobalSummary/GlobalSummary';
+import USSummary from "./components/USSummary/USSummary";
 
 function App() {
   // const getApiData = async () => {
@@ -28,6 +29,7 @@ function App() {
         <main>
           <Route path = "/" exact component = {Home} />
           <Route path = "/globalSummary" exact component = {GlobalSummary} />
+          <Route path = "/usSummary" exact component = {USSummary} />
         </main>
         
       </div>
