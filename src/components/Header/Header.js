@@ -18,6 +18,11 @@ function Header () {
                     US Summary
                 </Link>
             </div>
+            <div className = "navMenuStates">
+                <Link to = "/states">
+                    States
+                </Link>
+            </div>
             {/* <nav>
                 <Link to = "/">
                     <h3>Home</h3>

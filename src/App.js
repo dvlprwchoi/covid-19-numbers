@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Home from './components/Home/Home';
 import GlobalSummary from './components/GlobalSummary/GlobalSummary';
 import USSummary from "./components/USSummary/USSummary";
+import States from "./components/States/States";
 
 function App() {
   // const getApiData = async () => {
@@ -30,6 +31,7 @@ function App() {
           <Route path = "/" exact component = {Home} />
           <Route path = "/globalSummary" exact component = {GlobalSummary} />
           <Route path = "/usSummary" exact component = {USSummary} />
+          <Route path = "/states" exact component = {States} />
         </main>
         
       </div>

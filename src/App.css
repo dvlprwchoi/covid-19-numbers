@@ -28,14 +28,14 @@ h2 {
     /* display: flex;
     flex-direction: row; */
 }
-.navMenuHome, .navMenuGlobalSummary, .navMenuUsSummary {
+.navMenuHome, .navMenuGlobalSummary, .navMenuUsSummary, .navMenuStates {
     background-color: burlywood;
     border-radius: 15%;
     text-align: center;
     margin: 5px;
     padding: 5px;
 }
-.navMenuHome:hover, .navMenuGlobalSummary:hover, .navMenuUsSummary:hover {
+.navMenuHome:hover, .navMenuGlobalSummary:hover, .navMenuUsSummary:hover, .navMenuStates:hover {
     background-color: chocolate;
     transition: background 700ms;
 }
@@ -105,7 +105,7 @@ h2 {
         border-radius: 2.5%;
         font-size: 25px;
     }
-    .navMenuHome, .navMenuGlobalSummary, .navMenuUsSummary {
+    .navMenuHome, .navMenuGlobalSummary, .navMenuUsSummary, .navMenuStates {
         border-radius: 5%;
         font-size: 20px;
     }
