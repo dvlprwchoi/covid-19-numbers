@@ -43,9 +43,11 @@ function GlobalSummary () {
             <li>Total Recovered: {globalSummaryData.TotalRecovered}</li> */}
             
             {/* API 2 */}
-            <li>Confirmed: {globalSummaryData.confirmed}</li>
-            <li>Recovered: {globalSummaryData.recovered}</li>
-            <li>Deaths: {globalSummaryData.deaths}</li>
+            <div className = "data">
+                <li>Confirmed: {globalSummaryData.confirmed}</li>
+                <li>Recovered: {globalSummaryData.recovered}</li>
+                <li>Deaths: {globalSummaryData.deaths}</li>
+            </div>
         </div>
     );
 }

@@ -1,11 +1,95 @@
 .App {
     display: grid;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
-    /* width: 400px;
-    height: 600px; */
+    width: 291px;
+    height: 450px;
+    background-color: #BBADA0;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Dosis', sans-serif;
+}
+.appContent {
+    background-color: #d1c6ad;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4%;
+}
+.App h1 {
+    color: #0B1D51;
+    text-align: center;
+}
+h2 {
+    color: #631D76;
+}
+.navBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* display: flex;
+    flex-direction: row; */
+}
+.navMenuHome, .navMenuGlobalSummary, .navMenuUsSummary {
+    background-color: burlywood;
+    border-radius: 15%;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.navMenuHome:hover, .navMenuGlobalSummary:hover, .navMenuUsSummary:hover {
+    background-color: chocolate;
+    transition: background 700ms;
+}
+.data {
+    margin: 5px;
+    padding: 5px;
 }
 div {
-    border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
+    /* border: 1px solid black; */
+    /* margin: 5px;
+    padding: 5px; */
+}
+li {
+    list-style-type: none;
+    color: #201A23;
+}
+a:link, a:visited {
+    /* background-color: burlywood; */
+    color: purple;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+/* a:hover, a:active {
+    background-color: chocolate;
+} */
+/* a:link {
+    color:burlywood;
+    text-decoration: none;
+}
+a:visited {
+    color: burlywood;
+    text-decoration: none;
+}
+a:hover {
+    color: chocolate;
+    text-decoration: underline;
+}
+a:active {
+    color: brown;
+    text-decoration: none;
+} */
+h2 {
+    text-align: center;
+}
+
+@media (min-width: 450px) {
+    .App {
+        display: flex;
+        /* justify-content: center; */
+    }
+    .navBar {
+        display: flex;
+        flex-direction: column;
+    }
 }

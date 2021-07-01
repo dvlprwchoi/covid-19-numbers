@@ -18,10 +18,12 @@ function USSummary () {
     }, []);
     return (
         <div className = "usSummaryData">
-            <h2>US Summary</h2>
-            <li>Confirmed: {usSummary.confirmed}</li>
-            <li>Recovered: {usSummary.recovered}</li>
-            <li>Deaths: {usSummary.deaths}</li>
+            <h2>US Summary Data</h2>
+            <div className = "data">
+                <li>Confirmed: {usSummary.confirmed}</li>
+                <li>Recovered: {usSummary.recovered}</li>
+                <li>Deaths: {usSummary.deaths}</li>
+            </div>
         </div>
 
 
