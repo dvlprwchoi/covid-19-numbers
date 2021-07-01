@@ -86,10 +86,30 @@ h2 {
 @media (min-width: 450px) {
     .App {
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
+        width: 600px;
+        height: 600px;
     }
     .navBar {
         display: flex;
         flex-direction: column;
+    }
+    .appHeader {
+        width: 250px;
+    }
+    .appContent h2 {
+        font-size: 32px;
+    }
+    .appContent {
+        width: 350px;
+        border-radius: 2.5%;
+        font-size: 25px;
+    }
+    .navMenuHome, .navMenuGlobalSummary, .navMenuUsSummary {
+        border-radius: 5%;
+        font-size: 20px;
+    }
+    .App h1 {
+        font-size: 40px;
     }
 }
