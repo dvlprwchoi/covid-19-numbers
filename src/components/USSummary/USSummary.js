@@ -20,9 +20,9 @@ function USSummary () {
         <div className = "usSummaryData">
             <h2>US Summary Data</h2>
             <div className = "data">
-                <li>Confirmed: {usSummary.confirmed}</li>
-                <li>Recovered: {usSummary.recovered}</li>
-                <li>Deaths: {usSummary.deaths}</li>
+                <li>Confirmed: {usSummary.confirmed.toLocaleString("en-US")}</li>
+                <li>Recovered: {usSummary.recovered.toLocaleString("en-US")}</li>
+                <li>Deaths: {usSummary.deaths.toLocaleString("en-US")}</li>
             </div>
         </div>
 

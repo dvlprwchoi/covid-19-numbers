@@ -44,9 +44,9 @@ function GlobalSummary () {
             
             {/* API 2 */}
             <div className = "data">
-                <li>Confirmed: {globalSummaryData.confirmed}</li>
-                <li>Recovered: {globalSummaryData.recovered}</li>
-                <li>Deaths: {globalSummaryData.deaths}</li>
+                <li>Confirmed: {globalSummaryData.confirmed.toLocaleString("en-US")}</li>
+                <li>Recovered: {globalSummaryData.recovered.toLocaleString("en-US")}</li>
+                <li>Deaths: {globalSummaryData.deaths.toLocaleString("en-US")}</li>
             </div>
         </div>
     );
