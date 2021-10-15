@@ -31,7 +31,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/globalSummary" exact component={GlobalSummary} />
           <Route path="/usSummary" exact component={USSummary} />
-          <Route path="/searchByState" exact componet={SearchByState} />
+          <Route path="/searchByState" exact component={SearchByState} />
         </main>
       </div>
     </div>
