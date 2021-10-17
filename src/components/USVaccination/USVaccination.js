@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import NumberFormat from 'react-number-format';
 
-function GlobalVaccination() {
-  const [globalVaccinationData, setGlobalVaccinationData] = useState([]);
+function USVaccination() {
+  const [usVaccinationData, setUSVaccinationData] = useState([]);
   const getApiData = async () => {
     const vaccineUrl = 'https://covid-api.mmediagroup.fr/v1/vaccines';
     try {
       const response = await fetch(vaccineUrl);
       const data = await response.json();
-      setGlobalVaccinationData(data.World.All);
+      setUSVaccinationData(data.US.All);
     } catch (error) {
       console.log(error);
     }
@@ -18,14 +18,14 @@ function GlobalVaccination() {
   }, []);
 
   return (
-    <div className="globalVaccinationData">
-      <h2>Global Vaccination Data</h2>
+    <div className="usVaccinationData">
+      <h2>US Vaccination Data</h2>
       <div className="data">
         <li>
           Administered:{' '}
           <NumberFormat
             thousandsGroupStyle="thousand"
-            value={globalVaccinationData.administered}
+            value={usVaccinationData.administered}
             prefix="   "
             decimalSeparator="."
             displayType="text"
@@ -38,7 +38,7 @@ function GlobalVaccination() {
           Fully Vaccinated:{' '}
           <NumberFormat
             thousandsGroupStyle="thousand"
-            value={globalVaccinationData.people_vaccinated}
+            value={usVaccinationData.people_vaccinated}
             prefix="   "
             decimalSeparator="."
             displayType="text"
@@ -51,7 +51,7 @@ function GlobalVaccination() {
           Partially Vaccinated:{' '}
           <NumberFormat
             thousandsGroupStyle="thousand"
-            value={globalVaccinationData.people_partially_vaccinated}
+            value={usVaccinationData.people_partially_vaccinated}
             prefix="   "
             decimalSeparator="."
             displayType="text"
@@ -65,4 +65,4 @@ function GlobalVaccination() {
   );
 }
 
-export default GlobalVaccination;
+export default USVaccination;
