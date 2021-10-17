@@ -34,7 +34,8 @@ h2 {
 .navMenuSearchByState {
 .navMenuGlobalVaccination {
 .navMenuGlobalVaccination,
-.navMenuUSVaccination {
+.navMenuUSVaccination,
+.navMenuSearchByState {
   background-color: burlywood;
   border-radius: 15%;
   text-align: center;
@@ -50,7 +51,8 @@ h2 {
 .navMenuSearchByState:hover, {
 .navMenuGlobalVaccination:hover {
 .navMenuGlobalVaccination:hover,
-.navMenuUSVaccination:hover {
+.navMenuUSVaccination:hover,
+.navMenuSearchByState:hover {
   background-color: chocolate;
   transition: background 700ms;
 }
@@ -127,7 +129,8 @@ h2 {
   .navMenuSearchByState {
   .navMenuGlobalVaccination {
   .navMenuGlobalVaccination,
-  .navMenuUSVaccination {
+  .navMenuUSVaccination,
+  .navMenuSearchByState {
     border-radius: 5%;
     font-size: 20px;
   }
