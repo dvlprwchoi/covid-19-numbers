@@ -21,6 +21,9 @@ function Header() {
       <div className="navMenuUsSummary">
         <Link to="/usSummary">US Summary</Link>
       </div>
+      <div className="navMenuUSVaccination">
+        <Link to="/usVaccination">US Vaccination</Link>
+      </div>
       {/* <nav>
                 <Link to = "/">
                     <h3>Home</h3>
