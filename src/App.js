@@ -8,6 +8,7 @@ import USSummary from './components/USSummary/USSummary';
 import SearchByState from './components/SearchByState/SearchByState';
 import GlobalVaccination from './components/GlobalVaccination/GlobalVaccination';
 import USVaccination from './components/USVaccination/USVaccination';
+import SearchByState from './components/SearchByState/SearchByState';
 
 function App() {
   // const getApiData = async () => {
@@ -41,6 +42,8 @@ function App() {
           />
           <Route path="/usSummary" exact component={USSummary} />
           <Route path="/usVaccination" exact component={USVaccination} />
+          <Route path="/usSummary" exact component={USSummary} />
+          <Route path="/searchByState" exact componet={SearchByState} />
         </main>
       </div>
     </div>
