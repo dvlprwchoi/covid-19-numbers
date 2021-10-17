@@ -42,7 +42,6 @@ function App() {
           />
           <Route path="/usSummary" exact component={USSummary} />
           <Route path="/usVaccination" exact component={USVaccination} />
-          <Route path="/usSummary" exact component={USSummary} />
           <Route path="/searchByState" exact component={SearchByState} />
         </main>
       </div>
