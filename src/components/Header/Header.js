@@ -23,8 +23,13 @@ function Header() {
       </div>
       <div className="navMenuUSVaccination">
         <Link to="/usVaccination">US Vaccination</Link>
-      </div>
-      {/* <nav>
+        <div className="navMenuUsSummary">
+          <Link to="/usSummary">US Summary</Link>
+        </div>
+        <div className="navMenuSearchByState">
+          <Link to="/searchByState">Search by State</Link>
+        </div>
+        {/* <nav>
                 <Link to = "/">
                     <h3>Home</h3>
                 </Link>
@@ -35,9 +40,10 @@ function Header() {
                     <h3>US Summary</h3>
                 </Link>
             </nav> */}
-      {/* <main>
+        {/* <main>
 
             </main> */}
+      </div>
     </div>
   );
 }
