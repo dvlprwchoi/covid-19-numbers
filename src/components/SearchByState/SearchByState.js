@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import NumberFormat from 'react-number-format';
+// import NumberFormat from 'react-number-format';
 import SearchData from './SearchData/SearchData';
 import SearchForm from './SearchForm/SearchForm';
 
@@ -32,7 +32,10 @@ function SearchByState() {
   return (
     <div className="searchByState">
       <h2>Search By State</h2>
+      {/* <div className="search"> */}
       <SearchForm />
+      {/* </div> */}
+
       {/* <div className="stateName">
         <form onSubmit={this.handleSubmit}>
           <label>
@@ -45,48 +48,7 @@ function SearchByState() {
           </label>
         </form>
       </div> */}
-      <SearchData />
-      <div className="data">
-        <li>
-          Confirmed:{' '}
-          <NumberFormat
-            thousandsGroupStyle="thousand"
-            value={searchByState.confirmed}
-            prefix="   "
-            decimalSeparator="."
-            displayType="text"
-            type="text"
-            thousandSeparator={true}
-            allowNegative={true}
-          />
-        </li>
-        <li>
-          Recovered:{' '}
-          <NumberFormat
-            thousandsGroupStyle="thousand"
-            value={searchByState.recovered}
-            prefix="   "
-            decimalSeparator="."
-            displayType="text"
-            type="text"
-            thousandSeparator={true}
-            allowNegative={true}
-          />
-        </li>
-        <li>
-          Deaths:{' '}
-          <NumberFormat
-            thousandsGroupStyle="thousand"
-            value={searchByState.deaths}
-            prefix="   "
-            decimalSeparator="."
-            displayType="text"
-            type="text"
-            thousandSeparator={true}
-            allowNegative={true}
-          />
-        </li>
-      </div>
+      <SearchData searchByState={searchByState} />
     </div>
   );
 }
