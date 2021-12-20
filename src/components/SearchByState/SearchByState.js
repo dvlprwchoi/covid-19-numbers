@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import NumberFormat from 'react-number-format';
+import SearchForm from './SearchForm/SearchForm';
 
 function SearchByState() {
   const [searchByState, setSearchByState] = useState([]);
@@ -30,6 +31,7 @@ function SearchByState() {
   return (
     <div className="searchByState">
       <h2>Search By State</h2>
+      <SearchForm />
       {/* <div className="stateName">
         <form onSubmit={this.handleSubmit}>
           <label>
