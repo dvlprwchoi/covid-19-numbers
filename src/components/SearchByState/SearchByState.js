@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import NumberFormat from 'react-number-format';
+import SearchData from './SearchData/SearchData';
 import SearchForm from './SearchForm/SearchForm';
 
 function SearchByState() {
@@ -44,6 +45,7 @@ function SearchByState() {
           </label>
         </form>
       </div> */}
+      <SearchData />
       <div className="data">
         <li>
           Confirmed:{' '}
