@@ -1,14 +1,24 @@
 import NumberFormat from 'react-number-format';
 
 function SearchData({ searchByCountry }) {
+  // console.log(searchByCountry);
+  if (searchByCountry.length === 0) {
+    return (
+      <div className="searchData">
+        <div className="data">
+          <li>No data to show</li>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="searchData">
-      {/* <div className="data">
+      <div className="data">
         <li>
           Confirmed:{' '}
           <NumberFormat
             thousandsGroupStyle="thousand"
-            value={searchByState.confirmed}
+            value={searchByCountry.All.confirmed}
             prefix="   "
             decimalSeparator="."
             displayType="text"
@@ -21,7 +31,7 @@ function SearchData({ searchByCountry }) {
           Recovered:{' '}
           <NumberFormat
             thousandsGroupStyle="thousand"
-            value={searchByState.recovered}
+            value={searchByCountry.All.recovered}
             prefix="   "
             decimalSeparator="."
             displayType="text"
@@ -34,7 +44,7 @@ function SearchData({ searchByCountry }) {
           Deaths:{' '}
           <NumberFormat
             thousandsGroupStyle="thousand"
-            value={searchByState.deaths}
+            value={searchByCountry.All.deaths}
             prefix="   "
             decimalSeparator="."
             displayType="text"
@@ -43,7 +53,7 @@ function SearchData({ searchByCountry }) {
             allowNegative={true}
           />
         </li>
-      </div> */}
+      </div>
     </div>
   );
 }

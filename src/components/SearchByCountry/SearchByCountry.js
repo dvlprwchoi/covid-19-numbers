@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import NumberFormat from 'react-number-format';
 import SearchData from './SearchData/SearchData';
 import SearchForm from './SearchForm/SearchForm';
 
@@ -9,14 +8,14 @@ const API_URL = `https://covid-api.mmediagroup.fr/v1/cases`;
 function SearchByCountry() {
   const [searchByCountry, setSearchByCountry] = useState([]);
   const [countryName, setCountryName] = useState([]);
-  const API_URL_COUNTRY = API_URL + `?country=`;
+  const API_URL_COUNTRY = API_URL + `?country=` + countryName;
   // console.log(API_URL_COUNTRY);
 
   const getApiData = async () => {
     try {
       const response = await fetch(API_URL_COUNTRY);
       const COUNTRY_DATA = await response.json();
-      console.log(COUNTRY_DATA);
+      // console.log(COUNTRY_DATA);
       setSearchByCountry(COUNTRY_DATA);
     } catch (error) {
       console.log(error);
@@ -43,8 +42,8 @@ function SearchByCountry() {
     e.preventDefault();
     getApiData(countryName);
   }
-  console.log(countryName);
-  console.log(searchByCountry);
+  // console.log(countryName);
+  // console.log(searchByCountry);
 
   return (
     <div className="searchByCountry">
