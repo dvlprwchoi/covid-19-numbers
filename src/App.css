@@ -35,7 +35,7 @@ h2 {
 .navMenuGlobalVaccination {
 .navMenuGlobalVaccination,
 .navMenuUSVaccination,
-.navMenuSearchByState {
+.navMenuSearchByCountry {
   background-color: burlywood;
   border-radius: 15%;
   text-align: center;
@@ -52,19 +52,27 @@ h2 {
 .navMenuGlobalVaccination:hover {
 .navMenuGlobalVaccination:hover,
 .navMenuUSVaccination:hover,
-.navMenuSearchByState:hover {
+.navMenuSearchByCountry:hover {
   background-color: chocolate;
   transition: background 700ms;
 }
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 5px;
+  padding: 5px;
+}
+
 .data {
   margin: 5px;
   padding: 5px;
 }
-/* div { */
-/* border: 1px solid black; */
-/* margin: 5px;
+div {
+  border: 1px solid black;
+  /* margin: 5px;
     padding: 5px; */
-/* } */
+}
 li {
   list-style-type: none;
   color: #201a23;
@@ -130,7 +138,7 @@ h2 {
   .navMenuGlobalVaccination {
   .navMenuGlobalVaccination,
   .navMenuUSVaccination,
-  .navMenuSearchByState {
+  .navMenuSearchByCountry {
     border-radius: 5%;
     font-size: 20px;
   }

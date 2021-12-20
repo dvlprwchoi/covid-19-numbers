@@ -1,9 +1,9 @@
 import NumberFormat from 'react-number-format';
 
-function SearchData({ searchByState }) {
+function SearchData({ searchByCountry }) {
   return (
     <div className="searchData">
-      <div className="data">
+      {/* <div className="data">
         <li>
           Confirmed:{' '}
           <NumberFormat
@@ -43,7 +43,7 @@ function SearchData({ searchByState }) {
             allowNegative={true}
           />
         </li>
-      </div>
+      </div> */}
     </div>
   );
 }
