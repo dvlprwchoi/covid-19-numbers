@@ -64,15 +64,24 @@ h2 {
   padding: 5px;
 }
 
-.data {
+.data,
+.no-data {
   margin: 5px;
   padding: 5px;
 }
-div {
-  border: 1px solid black;
-  /* margin: 5px;
-    padding: 5px; */
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
 }
+
+/* div { */
+/* border: 1px solid black; */
+/* margin: 5px;
+    padding: 5px; */
+/* } */
 li {
   list-style-type: none;
   color: #201a23;

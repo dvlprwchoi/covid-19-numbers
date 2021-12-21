@@ -35,7 +35,10 @@ function SearchByCountry() {
   //   }
 
   function _change(e) {
-    setCountryName(e.target.value);
+    const inputValue = e.target.value;
+    const capitalizedInputValue =
+      inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
+    setCountryName(capitalizedInputValue);
   }
 
   function _submit(e) {

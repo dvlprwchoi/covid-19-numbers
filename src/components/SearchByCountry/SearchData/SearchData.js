@@ -5,7 +5,7 @@ function SearchData({ searchByCountry }) {
   if (searchByCountry.length === 0) {
     return (
       <div className="searchData">
-        <div className="data">
+        <div className="no-data">
           <li>No data to show</li>
         </div>
       </div>
