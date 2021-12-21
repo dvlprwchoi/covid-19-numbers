@@ -32,6 +32,7 @@ h2 {
 .navMenuGlobalSummary,
 .navMenuUsSummary,
 .navMenuSearchByState {
+.navMenuGlobalVaccination {
   background-color: burlywood;
   border-radius: 15%;
   text-align: center;
@@ -44,7 +45,8 @@ h2 {
 .navMenuHome:hover,
 .navMenuGlobalSummary:hover,
 .navMenuUsSummary:hover,
-.navMenuSearchByState:hover {
+.navMenuSearchByState:hover, {
+.navMenuGlobalVaccination:hover {
   background-color: chocolate;
   transition: background 700ms;
 }
@@ -119,6 +121,7 @@ h2 {
   .navMenuGlobalSummary,
   .navMenuUsSummary,
   .navMenuSearchByState {
+  .navMenuGlobalVaccination {
     border-radius: 5%;
     font-size: 20px;
   }
