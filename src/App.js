@@ -5,7 +5,6 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import GlobalSummary from './components/GlobalSummary/GlobalSummary';
 import USSummary from './components/USSummary/USSummary';
-import SearchByState from './components/SearchByState/SearchByState';
 import GlobalVaccination from './components/GlobalVaccination/GlobalVaccination';
 import USVaccination from './components/USVaccination/USVaccination';
 import SearchByCountry from './components/SearchByCountry/SearchByCountry';
@@ -34,13 +33,11 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/globalSummary" exact component={GlobalSummary} />
           <Route path="/usSummary" exact component={USSummary} />
-          <Route path="/searchByState" exact component={SearchByState} />
           <Route
             path="/globalVaccination"
             exact
             component={GlobalVaccination}
           />
-          <Route path="/usSummary" exact component={USSummary} />
           <Route path="/usVaccination" exact component={USVaccination} />
           <Route path="/searchByCountry" exact component={SearchByCountry} />
         </main>

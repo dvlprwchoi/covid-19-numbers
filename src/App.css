@@ -9,30 +9,33 @@
   padding: 5px;
   font-family: 'Dosis', sans-serif;
 }
+
 .appContent {
   background-color: #d1c6ad;
   margin: 5px;
   padding: 5px;
   border-radius: 4%;
 }
+
 .App h1 {
   color: #0b1d51;
   text-align: center;
 }
+
 h2 {
   color: #631d76;
 }
+
 .navBar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* display: flex;
     flex-direction: row; */
 }
+
 .navMenuHome,
 .navMenuGlobalSummary,
 .navMenuUsSummary,
-.navMenuSearchByState {
-.navMenuGlobalVaccination {
 .navMenuGlobalVaccination,
 .navMenuUSVaccination,
 .navMenuSearchByCountry {
@@ -45,11 +48,10 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+
 .navMenuHome:hover,
 .navMenuGlobalSummary:hover,
 .navMenuUsSummary:hover,
-.navMenuSearchByState:hover, {
-.navMenuGlobalVaccination:hover {
 .navMenuGlobalVaccination:hover,
 .navMenuUSVaccination:hover,
 .navMenuSearchByCountry:hover {
@@ -125,32 +127,36 @@ h2 {
     width: 600px;
     height: 600px;
   }
+
   .navBar {
     display: flex;
     flex-direction: column;
   }
+
   .appHeader {
     width: 250px;
   }
+
   .appContent h2 {
     font-size: 32px;
   }
+
   .appContent {
     width: 350px;
     border-radius: 2.5%;
     font-size: 25px;
   }
+
   .navMenuHome,
   .navMenuGlobalSummary,
   .navMenuUsSummary,
-  .navMenuSearchByState {
-  .navMenuGlobalVaccination {
   .navMenuGlobalVaccination,
   .navMenuUSVaccination,
   .navMenuSearchByCountry {
     border-radius: 5%;
     font-size: 20px;
   }
+
   .App h1 {
     font-size: 40px;
   }

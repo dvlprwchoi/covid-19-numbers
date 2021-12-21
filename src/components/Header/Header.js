@@ -12,14 +12,8 @@ function Header() {
       <div className="navMenuUsSummary">
         <Link to="/usSummary">US Summary</Link>
       </div>
-      <div className="navMenuSearchByState">
-        <Link to="/searchByState">Search by State</Link>
-      </div>
       <div className="navMenuGlobalVaccination">
         <Link to="/globalVaccination">Global Vaccination</Link>
-      </div>
-      <div className="navMenuUsSummary">
-        <Link to="/usSummary">US Summary</Link>
       </div>
       <div className="navMenuUSVaccination">
         <Link to="/usVaccination">US Vaccination</Link>
