@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import CountryList from './CountryList/CountryList';
 import SearchData from './SearchData/SearchData';
 import SearchForm from './SearchForm/SearchForm';
 
@@ -51,6 +52,7 @@ function SearchByCountry() {
   return (
     <div className="searchByCountry">
       <h2>Search By Country</h2>
+      <CountryList API_URL={API_URL} />
       {/* <div className="search"> */}
       <SearchForm
         _change={_change}
