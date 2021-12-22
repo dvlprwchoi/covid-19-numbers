@@ -9,14 +9,17 @@ function Header() {
       <div className="navMenuGlobalSummary">
         <Link to="/globalSummary">Global Summary</Link>
       </div>
-      <div className="navMenuGlobalVaccination">
-        <Link to="/globalVaccination">Global Vaccination</Link>
-      </div>
       <div className="navMenuUsSummary">
         <Link to="/usSummary">US Summary</Link>
       </div>
+      <div className="navMenuGlobalVaccination">
+        <Link to="/globalVaccination">Global Vaccination</Link>
+      </div>
       <div className="navMenuUSVaccination">
         <Link to="/usVaccination">US Vaccination</Link>
+      </div>
+      <div className="navMenuSearchByCountry">
+        <Link to="/searchByCountry">Search by Country</Link>
       </div>
       {/* <nav>
                 <Link to = "/">
