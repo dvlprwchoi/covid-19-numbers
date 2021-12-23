@@ -1,33 +1,37 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 
-function CountryList({ API_URL }) {
-  //   console.log(API_URL);
-  const [countryList, setCountryList] = useState([]);
-  console.log(countryList);
+// function CountryList({ API_URL, countryName }) {
+//   //   console.log(API_URL);
+//   const [countryList, setCountryList] = useState([]);
+//   console.log(countryList);
 
-  const getCountryNameData = async () => {
-    try {
-      const response = await fetch(API_URL);
-      const API_DATA = await response.json();
-      //   console.log(API_DATA);
-      setCountryList(API_DATA);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+//   const getCountryNameData = async () => {
+//     try {
+//       const response = await fetch(API_URL);
+//       const API_DATA = await response.json();
+//       //   console.log(API_DATA);
+//       setCountryList(API_DATA);
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   };
 
-  useEffect(() => {
-    getCountryNameData();
-  }, []);
+//   useEffect(() => {
+//     getCountryNameData();
+//   }, []);
 
-  const countryNames = Object.keys(countryList);
-  console.log(countryNames);
+//   const countryNames = Object.keys(countryList);
+//   console.log(countryNames);
 
-  return (
-    <div className="countryList">
-      <h1>This is country list page</h1>
-    </div>
-  );
-}
+//   //   if (countryNames.includes(countryName) === false) {
+//   //     return <div>No country name found</div>;
+//   //   }
 
-export default CountryList;
+//   return (
+//     <div className="countryList">
+//       <h1>This is country list page</h1>
+//     </div>
+//   );
+// }
+
+// export default CountryList;
