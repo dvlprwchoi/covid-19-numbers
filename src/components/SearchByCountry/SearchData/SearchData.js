@@ -11,12 +11,21 @@ function SearchData({ searchByCountry, countryName, countryNames }) {
       </div>
     );
   } else if (countryNames.includes(countryName) === false) {
+    const inputBoxValue = document.querySelector('.countrySearchInputBox');
+    // console.log(inputBoxValue);
+
+    function _reload() {
+      window.location.reload();
+    }
+
+    inputBoxValue.addEventListener('click', _reload);
+
     return (
       <div className="searchData">
         <div className="no-data">
           <li>
-            We CANNOT find your country name on the country list OR DOES NOT
-            matches...Try it again!
+            We CANNOT find your country name on the country list or DOES NOT
+            match...Try it again!
           </li>
         </div>
       </div>

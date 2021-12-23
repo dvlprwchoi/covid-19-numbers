@@ -20,8 +20,8 @@ function SearchByCountry() {
       setCountryList(API_DATA);
     } catch (error) {
       console.log(error);
-      document.getElementsByClassName('no-data').innerText =
-        '<li>Misspelled...Try it again!!!</li>';
+      // document.getElementsByClassName('no-data').innerText =
+      //   '<li>Misspelled...Try it again!!!</li>';
     }
   };
 
