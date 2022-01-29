@@ -1,6 +1,6 @@
 # COVID-19 NUMBERS
 
-As we have been living in the pandemic world from 2020, some people may want to know the numbers related to the COVID-19. The COVID-19 Numbers App is a single page web application built with ReactJS and 3rd party COVID-19 API. This app has a mobile responsive design depends on a device's screen size. It shows on-demand COVID-19 related numerical data. A user also can get data by typing a county name.
+As we have been living in the pandemic world from 2020, some people may want to know the numbers related to the COVID-19. The COVID-19 Numbers App is a single page web application built with ReactJS and 3rd party COVID-19 API. This app has a mobile responsive design depends on a device's screen size. It shows on-demand COVID-19 related numerical data. Users also can get data by typing country names.
 
 # Preview
 
